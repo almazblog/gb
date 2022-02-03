@@ -128,7 +128,7 @@ public class HomeWorkApp_3 {
         System.out.println("exercise 7:");
         int rightSum = 0;
         int leftSum = 0;
-        // Нахожу сумму всех элементов
+
         for (int i = 0; i < ex7.length; i++) {
             rightSum += ex7[i];
         }
