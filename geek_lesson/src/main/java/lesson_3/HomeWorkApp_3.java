@@ -4,6 +4,7 @@ public class HomeWorkApp_3 {
 
     public static void main(String[] args) {
         int[] ex6 = {1, 2, 3, 4, 5, 6, 7, 8, 8, 10, 11};
+        int[] ex7 = {2, 2, 2, 1, 2, 2,10,1};
 
         exercise_1();
         exercise_2();
@@ -11,6 +12,7 @@ public class HomeWorkApp_3 {
         exercise_4();
         exercise_5(7, 1);
         exercise_6(ex6);
+        System.out.println(exercise_7(ex7));
     }
 
     private static void exercise_1() {
@@ -118,6 +120,25 @@ public class HomeWorkApp_3 {
         }
         System.out.println("maximum "+maximum);
         System.out.println("minimum "+minimum);
+    }
+
+    public static boolean exercise_7 ( int[] ex7){
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("exercise 7:");
+        int rightSum = 0;
+        int leftSum = 0;
+        // Нахожу сумму всех элементов
+        for (int i = 0; i < ex7.length; i++) {
+            rightSum += ex7[i];
+        }
+        for (int i = 0; i < ex7.length; i++) {
+            leftSum += ex7[i];
+            if (leftSum == rightSum - leftSum) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 
