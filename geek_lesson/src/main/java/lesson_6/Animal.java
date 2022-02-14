@@ -16,7 +16,7 @@ public class Animal {
     private int swim_limit;
     private String name;
 
-    Animal(int run_limit, int swim_limit, String name) {
+    protected Animal(int run_limit, int swim_limit, String name) {
         this.run_limit = run_limit;
         this.swim_limit = swim_limit;
         this.name = name;
